@@ -145,7 +145,7 @@ El proyecto ya viene configurado para LocalDB. Solo necesitas:
 #### **Método 2: Desde Terminal**
 
 ```bash
-cd Backend/StockManagement.API
+cd \StockManagementBackend\StockManagement.API
 dotnet restore
 dotnet run
 ```
