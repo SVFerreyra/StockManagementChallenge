@@ -121,7 +121,7 @@ El proyecto ya viene configurado para LocalDB. Solo necesitas:
    ```json
    {
      "ConnectionStrings": {
-       "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=StockManagementDB;Trusted_Connection=True;TrustServerCertificate=True;"
+       "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=StockManagementDB;Trusted_Connection=True;TrustServerCertificate=True;"
      }
    }
    ```
