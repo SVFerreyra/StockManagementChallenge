@@ -110,7 +110,7 @@ El proyecto ya viene configurado para LocalDB. Solo necesitas:
    ```bash
    # Desde PowerShell o CMD
    cd Database
-   sqlcmd -S "(localdb)\MSSQLLocalDB" -i SETUP_DATABASE.sql
+   sqlcmd -S "(localdb)\MSSQLLocalDB" -i SETUP_DATABASE_CHALLENGE.sql
    ```
 
 4. **¡Listo!** El `appsettings.json` ya está configurado para LocalDB.
@@ -185,7 +185,7 @@ Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5
 
 ## 🔐 Credenciales de Acceso
 
-El sistema crea automáticamente un usuario administrador al iniciar:
+Para facilitar la revisión, el script de base de datos inyecta automáticamente un usuario con hash de contraseña real compatible con la lógica de la API:
 
 **Usuario:** `admin`  
 **Contraseña:** `admin123`
@@ -403,6 +403,10 @@ El algoritmo implementado en `ProductService.GetFilteredProductsAsync()`:
 ✅ Verificar que todos los paquetes NuGet están instalados
 
 ---
+# Notas de Implementación 
+Concurrencia Optimista: Se implementó ROWVERSION  en las tablas para evitar que dos usuarios sobrescriban el mismo producto simultáneamente.
+
+Idempotencia: El script SQL puede ejecutarse múltiples veces sin borrar datos existentes ni generar errores de duplicación.
 
 ## Autor
 
