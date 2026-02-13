@@ -2,8 +2,8 @@
 
 Sistema de gestión de inventario desarrollado para el challenge técnico de GYF Inteligencia Digital.
 DENTRO DEL REPOSITORIO VAN A ENCONTRAR 2 CARPETAS :
-- StockmanagementChallenge
--StockmanagementBackend
+- StockManagement (CARPETA DIRIGIDA AL FRONT HECHA EN REACT.JS)
+-StockmanagementBackend ( CARPETA DIRIGIDA AL BACKEND HECHA EN .NET 8 )
 
 ## Challenge Completado
 
