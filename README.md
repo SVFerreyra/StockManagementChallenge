@@ -404,9 +404,8 @@ El algoritmo implementado en `ProductService.GetFilteredProductsAsync()`:
 
 ---
 # Notas de Implementación 
-Concurrencia Optimista: Se implementó ROWVERSION  en las tablas para evitar que dos usuarios sobrescriban el mismo producto simultáneamente.
-
-Idempotencia: El script SQL puede ejecutarse múltiples veces sin borrar datos existentes ni generar errores de duplicación.
+Concurrencia:Se implementó ROWVERSION  en las tablas para evitar que dos usuarios sobrescriban el mismo producto simultáneamente.
+- El script SQL puede ejecutarse múltiples veces sin borrar datos existentes ni generar errores de duplicación.
 
 ## Autor
 
