@@ -128,7 +128,8 @@ El proyecto ya viene configurado para LocalDB. Solo necesitas:
 
 2. **Ejecutar el script en SSMS:**
    - Abrir SQL Server Management Studio
-   - Conectarse a `localhost\SQLEXPRESS`
+   - Conectarse a `(localdb)\MSSQLLocalDB`
+   - Authentication : Windows Authentication
    - Abrir archivo `Database/SETUP_DATABASE.sql`
    - Ejecutar (F5)
 
