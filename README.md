@@ -1,6 +1,9 @@
 # Stock Management System
 
 Sistema de gestión de inventario desarrollado para el challenge técnico de GYF Inteligencia Digital.
+DENTRO DEL REPOSITORIO VAN A ENCONTRAR 2 CARPETAS :
+- StockmanagementChallenge
+-StockmanagementBackend
 
 ## Challenge Completado
 
